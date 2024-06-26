@@ -40,10 +40,6 @@ body {
   background: #b7b7b7;
 }
 
-.startingPageContainer {
-  visibility: visible;
-}
-
 .petChoosingPageContainer {
   display: flex;
   flex-direction: column;

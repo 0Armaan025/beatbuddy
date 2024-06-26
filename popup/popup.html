@@ -22,8 +22,17 @@
 </head>
 <body>
 
+<!-- HOME PAGE -->
+<div id="homePage" class="homePageContainer">
+  <h3 style="font-size: 24px;font-family: Poppins,sans-serif;">Arman</h3>
+  <br/>
+    <div class="homeOptionsDiv" style="display:flex;flex-direction: column;"></div>
+  <input type="button" id="moveToNamePage" value="Next" class="continueButton" />
+</div>
+<!-- HOME PAGE -->
+
 <!-- STARTING PAGE -->
-<div id="startingPage" class="startingPageContainer">
+<div id="startingPage" class="startingPageContainer" style="display: none;">
   <h3 class="mainHeaderTitle">Welcome There! Please input your name:</h3>
   <input type="text" id="nameInput" class="nameInputField" placeholder="Ex. Armaan" />
   <br />
@@ -32,7 +41,7 @@
 <!-- STARTING PAGE -->
 
 <!-- PET CHOOSING PAGE -->
-<div id="petChoosingPage" class="petChoosingPageContainer">
+<div id="petChoosingPage" class="petChoosingPageContainer" style="display: none;">
   <h3 style="font-size: 24px; font-family: poppins, sans-serif;">Choose your starter pet:</h3>
   <div class="petOptions" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
     <div class="petOption" id="dogOption" style="padding: 1rem; border: 1px solid black; border-radius: 2px; margin-right: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
@@ -52,7 +61,7 @@
 <!-- PET CHOOSING PAGE -->
 
 <!-- PET NAMING PAGE -->
-<div id="petNamingPage" class="petNamingPageContainer">
+<div id="petNamingPage" class="petNamingPageContainer" style="display: none;">
   <h3 style="font-size: 24px; font-family: poppins, sans-serif;">Name your pet:</h3>
   <div id="randomStatsDisplay" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 1rem;"></div>
   <input type="text" id="petNameInput" class="nameInputField" placeholder="Pet's name" />
@@ -64,8 +73,7 @@
 <!-- PET NAMING PAGE -->
 
 <!-- WELCOME PAGE -->
-<div id="welcomePage" class="welcomePageContainer">
-  <div class="confetti" id="confetti"></div>
+<div id="welcomePage" class="welcomePageContainer" style="display: none;">
   <h3 class="welcomeMessage" id="welcomeMessage" style="font-size:20px;">You've welcomed <span id="petNameSpan" style="font-weight: bold;color:red"></span> to your family! 🥳</h3>
   <img id="petImage" class="petImage" src="" alt="Pet Image" style="width: 200px">
   <br />
@@ -74,5 +82,3 @@
 <!-- WELCOME PAGE -->
 
 <script src="./popup.js" type="module"></script>
-</body>
-</html>
