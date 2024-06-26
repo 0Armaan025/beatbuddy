@@ -62,3 +62,11 @@ body {
   cursor: pointer;
   background: rgb(222, 222, 222);
 }
+.statP {
+  font-family: "Poppins";
+  width: 130px;
+  font-size: 16px;
+  padding: 0.8rem;
+  border: 1.2px solid gray;
+  border-radius: 5px;
+}
