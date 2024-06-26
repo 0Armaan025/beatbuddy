@@ -66,3 +66,15 @@ body {
   border: 1.2px solid gray;
   border-radius: 5px;
 }
+
+.homeOption {
+  font-family: "Poppins";
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  background: #c6c6c6;
+}
+
+.homeOption:hover {
+  background: #8b8b8b;
+}
