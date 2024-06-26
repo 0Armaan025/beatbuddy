@@ -41,7 +41,7 @@ body {
 }
 
 .startingPageContainer {
-  opacity: 0;
+  visibility: visible;
 }
 
 .petChoosingPageContainer {
@@ -49,5 +49,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  opacity: 1;
+  visibility: visible;
+}
+
+.petOption {
+  transition: 0.3s ease-in-out;
+}
+.petOption img {
+  mix-blend-mode: multiply;
+}
+.petOption:hover {
+  cursor: pointer;
+  background: rgb(222, 222, 222);
 }

@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./popup.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./popup.css" />
+</head>
+<body>
 
+<!-- STARTING PAGE -->
+<div id="startingPage" class="startingPageContainer" >
+  <h3 class="mainHeaderTitle">Welcome There! Please input your name:</h3>
+  <input type="text" id="nameInput" class="nameInputField" placeholder="Ex. Armaan" />
+  <br />
+  <input type="button" id="openNewPage" value="Continue" class="continueButton" />
+</div>
+<!-- STARTING PAGE -->
 
-    <!-- STARTING PAGE  -->
-
-    <div class="startingPageContainer">
-    <h3 class="mainHeaderTitle">Welcome There! Please input your name:</h3>
-    <input type="text" class="nameInputField" placeholder="Ex. Armaan"/>
+<!-- PET CHOOSING PAGE -->
+<div id="petChoosingPage" class="petChoosingPageContainer">
+  <h3 style="font-size: 24px; font-family: poppins, sans-serif;">Choose your starter pet:</h3>
+  <div class="petOptions" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+    <div class="petOption" id="dogOption" style="padding: 1rem; border: 1px solid black; border-radius: 2px; margin-right: 10px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+      <img src="https://png.pngtree.com/png-vector/20230114/ourmid/pngtree-angry-cute-dog-sticker-png-image_6562186.png" style="width: 140px;" />
+      <h2>Puppy</h2>
+    </div>
+    <div class="petOption" id="catOption" style="padding: 1rem; padding-top: 2rem; padding-bottom: 1.4rem; border: 1px solid black; border-radius: 2px;display: flex;flex-direction: column;justify-content: center;align-items: center;">
+      <img src="https://img.freepik.com/free-vector/little-cute-cat-cartoon-character_1308-138075.jpg?size=626&ext=jpg&ga=GA1.1.1141335507.1719273600&semt=ais_user" style="width: 100px;" />
+      <h2>Kitten</h2>
+    </div>
     <br/>
-    <input type="button" id="openNewPage" value="Continue" class="continueButton"/>
-</div>    
+</div>
+<br/>
+<div class="" style="width: 100%; align-items: center;display: flex;flex-direction: row;justify-content: center;align-items: center;"></div>
+<input type="button" class="continuestarterpetBtn" id="goToNamingPage" value="Continue 💖" style="margin-left: 6rem;padding-left:0.5rem;padding-right:0.5rem;padding-top: 0.5rem;padding-bottom:0.5rem;font-size: 1rem;font-family: Poppins;background-color: #043eff;color:white;transition: 0.3s ease-in-out;outline:none;border-radius: 4px;cursor: pointer; border:none"/>
+</div>
+<!-- PET CHOOSING PAGE -->
 
 
+<!--PET NAMING PAGE-->
 
-<!-- STARTING PAGE  -->
+<div class="petNamingPage">
 
-<!-- PET CHOOSING PAGE   -->
-
-<div class="petChoosingPageContainer">
-    
 </div>
 
-
-<!-- PET CHOOSING PAGE   -->
-
-
-
-    <script src="./popup.js" type="module"></script>
-  </body>
+<!--PET NAMING PAGE-->
+<script src="./popup.js" type="module"></script>
+</body>
 </html>
