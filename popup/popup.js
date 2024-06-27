@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const startingPage = document.getElementById("startingPage");
   const petChoosingPage = document.getElementById("petChoosingPage");
   const petNamingPage = document.getElementById("petNamingPage");
+  const bagPage = document.getElementById("bagPage");
   const randomStatsDisplay = document.getElementById("randomStatsDisplay");
   const nameInput = document.getElementById("nameInput");
   const continueButton = document.getElementById("openNewPage");
@@ -17,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToStartingPage1 = document.getElementById("backToStartingPage1");
 
   const backToStartingPage3 = document.getElementById("backToStartingPage3");
+  const backToHomePage = document.getElementById("backToHomePage");
 
-  // Initialize variables to store chosen pet and image
+  const storePage = document.getElementById("storePage");
+
   let chosenStarterPet = "";
   let chosenStarterPetImage = "";
 
-  // Object to store pet breeds and images
   const breeds = {
     dog: [
       {
@@ -50,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ],
   };
 
-  // Event listener to move from home page to starting page
   document
     .getElementById("moveToNamePage")
     .addEventListener("click", function () {
@@ -58,7 +59,20 @@ document.addEventListener("DOMContentLoaded", function () {
       startingPage.style.display = "block";
     });
 
-  // Event listeners for pet options (dog and cat)
+  document
+    .getElementById("moveToBagPage")
+    .addEventListener("click", function () {
+      bagPage.style.display = "block";
+      homePage.style.display = "none";
+    });
+
+  document
+    .getElementById("moveToStorePage")
+    .addEventListener("click", function () {
+      storePage.style.display = "block";
+      homePage.style.display = "none";
+    });
+
   dogOption.addEventListener("click", function () {
     resetBackgroundColor();
     dogOption.style.backgroundColor = "#dedede";
@@ -71,14 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
     chosenStarterPet = "cat";
   });
 
-  // Function to reset background color of pet options
   function resetBackgroundColor() {
     dogOption.style.backgroundColor = "";
     catOption.style.backgroundColor = "";
   }
 
-  // Event listener for continue button on starting page
-  // Event listener for continue button on starting page
   continueButton.addEventListener("click", function () {
     const enteredName = nameInput.value.trim();
 
@@ -90,18 +101,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Event listener for continue button on pet choosing page
   goToNamingPageButton.addEventListener("click", function () {
     if (chosenStarterPet !== "") {
       petChoosingPage.style.display = "none";
       petNamingPage.style.display = "block";
-      randomStatsDisplay.innerHTML = generateRandomStats(); // Display random stats
     } else {
       alert("Please choose a starter pet.");
     }
   });
 
-  // Event listener for submit button on pet naming page
   submitPetNameButton.addEventListener("click", function () {
     const petName = document.getElementById("petNameInput").value.trim();
     if (petName !== "") {
@@ -114,10 +122,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Event listeners for back buttons on each page
   backToStartingPage1.addEventListener("click", function () {
     petChoosingPage.style.display = "none";
     startingPage.style.display = "block";
+    resetBackgroundColor();
+  });
+
+  backToHomePage.addEventListener("click", function () {
+    bagPage.style.display = "none";
+    storePage.style.display = "none";
+    homePage.style.display = "block";
     resetBackgroundColor();
   });
 
@@ -127,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
     resetBackgroundColor();
   });
 
-  // Function to generate random pet stats
   function generateRandomStats() {
     const weights = ["2.5kg", "3kg", "3.5kg", "4kg"];
     const heights = ["25cm", "30cm", "35cm", "40cm"];

@@ -78,3 +78,9 @@ body {
 .homeOption:hover {
   background: #8b8b8b;
 }
+.feedBtn {
+  transition: 0.3s ease-in-out;
+}
+.feedBtn:hover {
+  background: #ff2727;
+}

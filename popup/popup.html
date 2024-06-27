@@ -31,10 +31,10 @@
     <span style="font-size: 20px;font-family: Poppins,sans-serif;">100</span>
 </div>
 </div>
-  <div class="newContainer" style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
+  <div class="newContainer" id="homePage" style="display: flex; flex-direction: row;justify-content: center;align-items: center;">
     <div class="homeOptionsDiv" style="display:flex;flex-direction: column;justify-content: center;align-items:center">
-        <div class="homeOption" style="padding: 1rem;border:2px solid black;border-radius: 6px;"><img src="https://cdn-icons-png.flaticon.com/128/3429/3429142.png" style="width: 40px"/></div>
-        <div class="homeOption" style="padding: 1rem;margin-top:20px;border:2px solid black;border-radius: 6px;"><img src="https://cdn-icons-png.flaticon.com/128/3460/3460473.png" style="width: 40px"/></div>
+        <div class="homeOption" style="padding: 1rem;border:2px solid black;border-radius: 6px;"><img src="https://cdn-icons-png.flaticon.com/128/3429/3429142.png" id="moveToBagPage" style="width: 40px"/></div>
+        <div class="homeOption" style="padding: 1rem;margin-top:20px;border:2px solid black;border-radius: 6px;"><img src="https://cdn-icons-png.flaticon.com/128/3460/3460473.png" id="moveToStorePage" style="width: 40px"/></div>
     </div>
     <img src="https://static.vecteezy.com/system/resources/previews/027/190/544/original/pixel-art-black-office-suit-man-character-2-png.png" style="width: 150px;mix-blend-mode: multiply;height: 150px"/>
 <div class="homeOptionsDiv" style="display:flex;flex-direction: column;justify-content: center;align-items:center">
@@ -75,6 +75,23 @@
 </div>
 <!-- PET CHOOSING PAGE -->
 
+
+<!-- STORE PAGE -->
+<div id="storePage" class="storePageContainer" style="display: none;">
+  <center>
+
+    <h3 style="font-size: 32px;font-family: Poppins,sans-serif;font-weight: 700;">
+      Store Page
+    </h3>
+  </center>
+
+  <input type="button" class="backButton" id="backToHomePage" value="Back" />
+  
+</div>
+<!-- STORE PAGE -->
+
+
+
 <!-- PET NAMING PAGE -->
 <div id="petNamingPage" class="petNamingPageContainer" style="display: none;">
   <h3 style="font-size: 24px; font-family: poppins, sans-serif;">Name your pet:</h3>
@@ -94,5 +111,33 @@
   <input type="button" class="backButton" id="backToStartingPage3" value="Back" />
 </div>
 <!-- WELCOME PAGE -->
+
+<!-- BAG PAGE -->
+<div id="bagPage" class="bagPageContainer" style="display: none;">
+  <center>
+    <h1 style="font-family: Poppins, sans-serif;">Your Bag</h1>
+    <div class="bagItems" style="display: flex; flex-direction: row; justify-content: center; align-items: center;">
+      <div class="bagItem" style="padding: 1rem; border: 1px solid black; border-radius: 2px; margin-right: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="https://cdn-icons-png.flaticon.com/128/8334/8334162.png" style="width: 40px;" />
+        <h2>Food</h2>
+        <button class="feedBtn" style="background: red;outline:none;border:0px;border-radius: 5px;padding: 0.35rem;color:white;padding-right: 0.6rem;padding-left: 0.6rem;cursor: pointer;">Feed</button>
+      </div>
+      <div class="bagItem" style="padding: 1rem; padding-top: 1rem; padding-bottom: 1rem; border: 1px solid black; border-radius: 2px; display: flex; flex-direction: column; justify-content: center; align-items: center;margin-right: 10px;">
+        <img src="https://cdn-icons-png.flaticon.com/128/9716/9716977.png" style="width: 40px;" />
+        <h2>Toys</h2>
+        <button class="feedBtn" style="background: red;outline:none;border:0px;border-radius: 5px;padding: 0.35rem;color:white;padding-right: 0.6rem;padding-left: 0.6rem;cursor: pointer;">Play</button>
+      </div>
+      <div class="bagItem" style="padding: 1rem; padding-top: 1rem; padding-bottom: 1rem; border: 1px solid black; border-radius: 2px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 40px;" />
+        <h2>Medicines</h2>
+        <button class="feedBtn" style="background: red;outline:none;border:0px;border-radius: 5px;padding: 0.35rem;color:white;padding-right: 0.6rem;padding-left: 0.6rem;cursor: pointer;">Feed</button>
+      </div>
+      <br/>
+    </center>
+    <input type="button" class="backButton" id="backToHomePage" value="Back" />
+</div>
+<!-- BAG PAGE -->
+
+
 
 <script src="./popup.js" type="module"></script>
