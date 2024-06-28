@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const backToStartingPage3 = document.getElementById("backToStartingPage3");
   const backToHomePage = document.getElementById("backToHomePage");
+  const backToHomePage2 = document.getElementById("backToHomePage2");
 
   const storePage = document.getElementById("storePage");
 
@@ -57,6 +58,11 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       homePage.style.display = "none";
       startingPage.style.display = "block";
+    });
+
+    backToHomePage2.addEventListener("click", function () {
+      bagPage.style.display="none";
+      homePage.style.display = "block";
     });
 
   document
@@ -129,7 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   backToHomePage.addEventListener("click", function () {
-    bagPage.style.display = "none";
     storePage.style.display = "none";
     homePage.style.display = "block";
     resetBackgroundColor();
