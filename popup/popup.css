@@ -84,3 +84,74 @@ body {
 .feedBtn:hover {
   background: #ff2727;
 }
+
+.petsPageContainer {
+  padding: 1rem;
+}
+
+.petsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.petContainer {
+  padding: 0.8rem;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.petContainer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.petContainer img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.petContainer h4 {
+  margin-top: 0.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+.backButton {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.backButton:hover {
+  background-color: #0056b3;
+}
+
+.viewStatsBtnForPets {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-family: Poppins, sans-serif;
+  background-color: #282828;
+  box-shadow: 2px 1px 3px 2px black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewStatsBtnForPets:hover {
+  background-color: #000000;
+}

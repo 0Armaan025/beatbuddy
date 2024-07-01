@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const petNameSpan = document.getElementById("petNameSpan");
   const petImage = document.getElementById("petImage");
   const backToStartingPage1 = document.getElementById("backToStartingPage1");
+  const petsPage = document.getElementById("petsPage");
+  const backToHomePage3 = document.getElementById("backToHomePage3");
 
   const backToStartingPage3 = document.getElementById("backToStartingPage3");
   const backToHomePage = document.getElementById("backToHomePage");
@@ -54,16 +56,27 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   document
+    .getElementById("moveToPetsPage")
+    .addEventListener("click", function () {
+      homePage.style.display = "none";
+      petsPage.style.display = "block";
+    });
+
+  document
     .getElementById("moveToNamePage")
     .addEventListener("click", function () {
       homePage.style.display = "none";
       startingPage.style.display = "block";
     });
 
-    backToHomePage2.addEventListener("click", function () {
-      bagPage.style.display="none";
-      homePage.style.display = "block";
-    });
+  backToHomePage2.addEventListener("click", function () {
+    bagPage.style.display = "none";
+    homePage.style.display = "block";
+  });
+  backToHomePage3.addEventListener("click", function () {
+    petsPage.style.display = "none";
+    homePage.style.display = "block";
+  });
 
   document
     .getElementById("moveToBagPage")
