@@ -77,165 +77,78 @@
 
 
 <!-- STORE PAGE -->
-<div id="storePage" class="storePageContainer" style="display: none;height:300px;overflow:hidden;overflow-y:auto;box-sizing:border-box; padding: 2rem; border-radius: 8px;width: 30rem;">
+<div id="storePage" class="storePageContainer" style="display: none; padding: 2rem; border-radius: 8px;width: 30rem;">
   <center>
     <h3 style="font-size: 32px; font-family: Poppins, sans-serif; font-weight: 700; color: black; text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);">
       Store Page
     </h3>
      
-   </div>
+   
     <br>
-    <div class="allStoreItems" style="display:flex;flex-direction:column;justify-content: center;align-items:center;padding:1rem;border:2px solid black; border-end-end-radius: 6px;">
-      <div class="storeItemsRow" style="display:flex;flex-direction:row;justify-content:space-evenly;align-items: center;padding:2rem;">
-         <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Dog Food 1</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+    <div class="storeItems" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
+      <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/8334/8334162.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Food</h4>
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-         </div>
-        <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Dog Food 2</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
-          </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div><div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;background:gray">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Dog Treats</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
-          </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div>
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
       </div>
-            <div class="storeItemsRow" style="display:flex;flex-direction:row;justify-content:space-evenly;align-items: center;padding:2rem;">
-         <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>First Aid Kit</h4></h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+      <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/9716/9716977.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Toys</h4>
+        
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-         </div>
-        <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Injections</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
+      </div>
+      <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Medicines</h4>
+        
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div><div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Comb</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
+      </div>
+      <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Catnip</h4>
+        
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div>
-            </div>
-
-            <div class="storeItemsRow" style="display:flex;flex-direction:row;justify-content:space-evenly;align-items: center;padding:2rem;">
-         <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Catnip</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
+      </div>
+      <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Medicines</h4>
+        
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-         </div>
-        <div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Sunglasses</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
+      </div><div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
+        <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
+        <h4 style="font-size: 18px; color: #333;">Scratcher</h4>
+        
+        <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
+          <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
+            <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
           </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div><div class="storeItem" style="display:flex;flex-direction: column;justify-content: center;align-items: center;">
-          <img src="i will put later, it is dog food 1" alt="no Image" style="width: 60px;height:60px;"/>
-          <h4>Color changing ball</h4>
-          <div class="coinsStoreDiv" style="display: flex;flex-direction: row;justify-content: start;align-items: center;">
-            <img src="i font have link yet" alt="coins image" style="width :60px;height:30px;margin-right:20px;"/>
-            <h4>400</h4>
-          </div>
-          <input type="button" value="Buy!" style="padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem; background-color: red;margin-top: 8px;outline: none;border-radius: 8px;"/>
-        </div>
-            </div>
-      
+        <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
+      </div>
     </div>
+  
   </center>
 
-  <div class="storeItems" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem;">
-    <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/8334/8334162.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Food</h4>
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div>
-    <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/9716/9716977.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Toys</h4>
-      
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div>
-    <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Medicines</h4>
-      
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div>
-    <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Catnip</h4>
-      
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div>
-    <div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Medicines</h4>
-      
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div><div class="storeItem" style="background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 1); transition: transform 0.3s;">
-      <img src="https://cdn-icons-png.flaticon.com/128/3022/3022827.png" style="width: 60px; margin-bottom: 0.5rem;" />
-      <h4 style="font-size: 18px; color: #333;">Scratcher</h4>
-      
-      <div class="storeCoins" style="display: flex;flex-direction:row;justify-content: start;align-items: center;padding: 1px;">
-        <img src="https://cdn-icons-png.flaticon.com/128/5219/5219370.png" style="width: 20px" />
-          <h4 style="font-family: Poppins;font-size: 12px;margin-left: 10px">100<h4>
-        </div>
-      <button class="buyBtn" style="background: #ff4500; color: white; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; transition: background 0.3s;">Buy</button>
-    </div>
-  </div>
-
+  
   <center>
     <input type="button" class="backButton" id="backToHomePage" value="Back" />
   </center>
