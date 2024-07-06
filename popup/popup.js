@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const homePage = document.getElementById("homePage");
+  const petsStatsPage = document.getElementById("petsStatsPage");
   const startingPage = document.getElementById("startingPage");
   const petChoosingPage = document.getElementById("petChoosingPage");
   const petNamingPage = document.getElementById("petNamingPage");
@@ -20,10 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const backToHomePage3 = document.getElementById("backToHomePage3");
 
   const backToStartingPage3 = document.getElementById("backToStartingPage3");
+  const backToStartingPage4 = document.getElementById("backToStartingPage4");
   const backToHomePage = document.getElementById("backToHomePage");
   const backToHomePage2 = document.getElementById("backToHomePage2");
 
   const storePage = document.getElementById("storePage");
+
+  const moveToPetsStatsPage = document.getElementById("moveToPetsStatsPage");
 
   let chosenStarterPet = "";
   let chosenStarterPetImage = "";
@@ -62,6 +66,12 @@ document.addEventListener("DOMContentLoaded", function () {
       petsPage.style.display = "block";
     });
 
+  moveToPetsStatsPage.addEventListener("click", function () {
+    petsPage.style.display = "none";
+
+    petsStatsPage.style.display = "block";
+  });
+
   document
     .getElementById("moveToNamePage")
     .addEventListener("click", function () {
@@ -75,6 +85,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   backToHomePage3.addEventListener("click", function () {
     petsPage.style.display = "none";
+    homePage.style.display = "block";
+  });
+
+  backToHomePage4.addEventListener("click", function () {
+    petsStatsPage.style.display = "none";
     homePage.style.display = "block";
   });
 
