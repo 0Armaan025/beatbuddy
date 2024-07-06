@@ -18,11 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
   const petImage = document.getElementById("petImage");
   const backToStartingPage1 = document.getElementById("backToStartingPage1");
   const petsPage = document.getElementById("petsPage");
+  const spotifyStatsPage = document.getElementById("spotifyStatsPage");
   const backToHomePage3 = document.getElementById("backToHomePage3");
+  const backToHomePage5 = document.getElementById("backToHomePage5");
 
   const backToStartingPage3 = document.getElementById("backToStartingPage3");
   const backToStartingPage4 = document.getElementById("backToStartingPage4");
   const backToHomePage = document.getElementById("backToHomePage");
+  const moveToSpotifyStatsPage = document.getElementById(
+    "moveToSpotifiyStatsPage"
+  );
   const backToHomePage2 = document.getElementById("backToHomePage2");
 
   const storePage = document.getElementById("storePage");
@@ -88,6 +93,11 @@ document.addEventListener("DOMContentLoaded", function () {
     homePage.style.display = "block";
   });
 
+  backToHomePage5.addEventListener("click", function () {
+    spotifyStatsPage.style.display = "none";
+    homePage.style.display = "block";
+  });
+
   backToHomePage4.addEventListener("click", function () {
     petsStatsPage.style.display = "none";
     homePage.style.display = "block";
@@ -99,6 +109,11 @@ document.addEventListener("DOMContentLoaded", function () {
       bagPage.style.display = "block";
       homePage.style.display = "none";
     });
+
+  moveToSpotifyStatsPage.addEventListener("click", function () {
+    homePage.style.display = "none";
+    spotifyStatsPage.style.display = "block";
+  });
 
   document
     .getElementById("moveToStorePage")
